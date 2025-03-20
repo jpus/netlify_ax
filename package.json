@@ -7,15 +7,15 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "netlify dev", // 本地开发时使用 Netlify Dev
-    "build": "echo 'Build complete'", // 构建脚本（可以根据需要添加更多命令）
+    "start": "node app.js", // 本地开发时使用"netlify dev"
+    "build": "echo 'Running build script...' && npm install",
     "test": "echo 'No tests specified'"
   },
   "dependencies": {
     // 你的项目依赖
   },
   "devDependencies": {
-    "netlify-cli": "^12.0.0" // 用于本地开发和部署
+    //"netlify-cli": "^12.0.0" // 用于本地开发和部署
   },
   "engines": {
     "node": ">=14"
