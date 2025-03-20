@@ -1,4 +1,11 @@
-[build]
-  command = "npm run build"
-  functions = "netlify/functions" # 指定函数目录
-  publish = "." # 如果你的项目有静态文件需要部署，可以指定发布目录
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Headers = "*"
+    Access-Control-Allow-Methods = "*"
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/proxy"
+  status = 200
+  force = true
