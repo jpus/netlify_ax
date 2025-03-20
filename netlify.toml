@@ -3,3 +3,11 @@
   functions = "netlify/functions" # 指定函数目录
 [[plugins]]
   package = "@netlify/plugin-functions-install-core"
+[[headers]]
+  for = "/*"
+  [headers.values]
+  cache-control = '''
+  max-age=0,
+  no-cache,
+  no-store,
+  must-revalidate'''
