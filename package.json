@@ -8,7 +8,7 @@
   "private": false,
   "scripts": {
     "start": "node app.js",
-    "build": "echo 'Building project...' && node app.js" // 替换为你的实际构建命令
+    "build": "echo 'Running build script...' && npm install"
   },
   "engines": {
     "node": ">=14"
