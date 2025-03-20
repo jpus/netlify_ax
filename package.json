@@ -1,0 +1,16 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "node",
+  "main": "app.js",
+  "author": "admin",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node app.js",
+    "build": "echo 'Running build script...' && npm install"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
