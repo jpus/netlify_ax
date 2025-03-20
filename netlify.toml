@@ -1,3 +1,5 @@
 [build]
   command = "npm run build"
   functions = "netlify/functions" # 指定函数目录
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
