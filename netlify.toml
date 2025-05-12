@@ -1,12 +1,11 @@
 [build]
   command = "npm run build"
   functions = "netlify/functions" # 指定函数目录
-  publish = "dist" # 如果你的项目有静态文件需要部署，可以指定发布目录
 [[plugins]]
   package = "@netlify/plugin-functions-install-core"
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/app.js"
   status = 200
 [[headers]]
   for = "/*"
