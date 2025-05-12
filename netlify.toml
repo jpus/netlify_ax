@@ -1,16 +1,2 @@
 [build]
-  command = "npm run build"
-  functions = "netlify/functions" # 指定函数目录
-[[plugins]]
-  package = "@netlify/plugin-functions-install-core"
-[[redirects]]
-  from = "/*"
-  status = 200
-[[headers]]
-  for = "/*"
-  [headers.values]
-  cache-control = '''
-  max-age=0,
-  no-cache,
-  no-store,
-  must-revalidate'''
+  functions = "functions"
