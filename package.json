@@ -2,7 +2,7 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "node",
-  "main": "app.js",
+  "main": "netlify/functions/app.js",
   "author": "admin",
   "license": "MIT",
   "private": false,
